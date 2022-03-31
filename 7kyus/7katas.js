@@ -1,5 +1,3 @@
-/*From Bottom Up*/
-
 // added 3/30/2022
 // Find the middle element
 function gimme(triplet) {
@@ -53,3 +51,11 @@ function factorial(n) {
         }
     }
 }
+
+// Find the middle element 3/31/2022
+function gimme (triplet) {
+    // make a copy from triplet and sorted it from min to max
+    let org = triplet.slice().sort((a,b) => a - b);
+    // return intex of the middle number
+    return triplet.indexOf(org[1])
+    }
