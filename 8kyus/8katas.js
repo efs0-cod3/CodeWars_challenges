@@ -1,5 +1,12 @@
 /*From Bottom Up*/
+// Get the mean of an array 01/04/2022
+function getAverage(marks){
+  //TODO : calculate the downward rounded average of the marks array
+  let newArr = marks.reduce((a,b) => a+b)
 
+  return Math.floor(newArr/marks.length)
+  
+  }
 // added 3/30/2022
 // Is he gonna survive? 
 function hero(bullets, dragons){
