@@ -1,4 +1,22 @@
 /*From Bottom Up*/
+// Find the next perfect square! 01/04/2022
+function findNextSquare(sq) {
+  // Return the next square if sq is a perfect square, -1 otherwise
+     
+// check if the square of sq is integer add 1
+if(Number.isInteger(Math.sqrt(sq))){
+  sq++
+//   while sq++ is not integer continue adding
+  while (!Number.isInteger(Math.sqrt(sq))){
+         sq++
+         }
+//   once the sqrt of sq is integuer return sq 
+  return sq 
+  } else
+//     if The sqrt of sq submited is not integer return -1
+    return -1
+}
+
 // Get the mean of an array 01/04/2022
 function getAverage(marks){
   //TODO : calculate the downward rounded average of the marks array
