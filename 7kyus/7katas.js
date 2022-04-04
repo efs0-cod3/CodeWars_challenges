@@ -1,3 +1,41 @@
+/*From Bottom Up*/
+// 7kyus
+
+
+
+// Get the Middle Character 04/04/2022
+function getMiddle(s) {
+    //Code goes here!
+    //splits s into array
+    let sArr = s.split('')
+    //condition to to know if the length is even or not
+    if (sArr.length % 2 == 0) {
+        //     this will get the middle two letters of even length strings
+        return sArr[Math.floor(sArr.length / 2) - 1] + sArr[Math.floor(sArr.length / 2)]
+    } else {
+        //     this will get the middle letter of odd length strings
+        return sArr[Math.floor(sArr.length / 2)]
+    }
+}
+
+// Find the next perfect square! 01/04/2022
+function findNextSquare(sq) {
+    // Return the next square if sq is a perfect square, -1 otherwise
+
+    // check if the square of sq is integer add 1
+    if (Number.isInteger(Math.sqrt(sq))) {
+        sq++
+        //   while sq++ is not integer continue adding
+        while (!Number.isInteger(Math.sqrt(sq))) {
+            sq++
+        }
+        //   once the sqrt of sq is integuer return sq 
+        return sq
+    } else
+        //     if The sqrt of sq submited is not integer return -1
+        return -1
+}
+
 // added 3/30/2022
 // Find the middle element
 function gimme(triplet) {
@@ -53,9 +91,9 @@ function factorial(n) {
 }
 
 // Find the middle element 3/31/2022
-function gimme (triplet) {
+function gimme(triplet) {
     // make a copy from triplet and sorted it from min to max
-    let org = triplet.slice().sort((a,b) => a - b);
+    let org = triplet.slice().sort((a, b) => a - b);
     // return intex of the middle number
     return triplet.indexOf(org[1])
-    }
+}

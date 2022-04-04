@@ -1,47 +1,32 @@
 /*From Bottom Up*/
-// Find the next perfect square! 01/04/2022
-function findNextSquare(sq) {
-  // Return the next square if sq is a perfect square, -1 otherwise
-     
-// check if the square of sq is integer add 1
-if(Number.isInteger(Math.sqrt(sq))){
-  sq++
-//   while sq++ is not integer continue adding
-  while (!Number.isInteger(Math.sqrt(sq))){
-         sq++
-         }
-//   once the sqrt of sq is integuer return sq 
-  return sq 
-  } else
-//     if The sqrt of sq submited is not integer return -1
-    return -1
-}
+// 8kyus
+
 
 // Get the mean of an array 01/04/2022
-function getAverage(marks){
+function getAverage(marks) {
   //TODO : calculate the downward rounded average of the marks array
-  let newArr = marks.reduce((a,b) => a+b)
+  let newArr = marks.reduce((a, b) => a + b)
 
-  return Math.floor(newArr/marks.length)
-  
-  }
+  return Math.floor(newArr / marks.length)
+
+}
 // added 3/30/2022
 // Is he gonna survive? 
-function hero(bullets, dragons){
-//Get Coding!
- return  bullets >= dragons*2 ? true : false
+function hero(bullets, dragons) {
+  //Get Coding!
+  return bullets >= dragons * 2 ? true : false
 }
 
 // Convert a string to an array
-function stringToArray(string){
+function stringToArray(string) {
   // code code code
-return string.split(' ')
+  return string.split(' ')
 }
- 
+
 // String repeat
-function repeatStr (n, s) {
-let strAdded = ''
-  for(let i = 0; i < n; i++){
+function repeatStr(n, s) {
+  let strAdded = ''
+  for (let i = 0; i < n; i++) {
     strAdded += s
   }
   return strAdded
@@ -51,14 +36,14 @@ let strAdded = ''
 
 class SmallestIntegerFinder {
   findSmallestInt(args) {
-    let min = args.reduce((a,b) => Math.min(a,b))
-return min
+    let min = args.reduce((a, b) => Math.min(a, b))
+    return min
   }
 }
 
 // Sentence Smash
-function smash (words) {
-   return words.join(' ')
+function smash(words) {
+  return words.join(' ')
 };
 
 // Keep Hydrated!
@@ -80,22 +65,22 @@ function makeUpperCase(str) {
 }
 
 // Grasshopper - Personalized Message
-function greet (name, owner) {
+function greet(name, owner) {
   // Add code here
   return name === owner ? 'Hello boss' : 'Hello guest';
-  }
+}
 
 // Opposite number
 function opposite(number) {
   //your code here
- return number = Number(`${-number}`) 
+  return number = Number(`${-number}`)
 }
 // Opposite number 2
 function opposite(number) {
   //your code here
-  if(number > 0){
- number = Number(`${-number}`)
-  }else{
+  if (number > 0) {
+    number = Number(`${-number}`)
+  } else {
     number = Number(`${-number}`)
   }
   return number
@@ -104,37 +89,37 @@ function opposite(number) {
 // Century From Year
 function century(year) {
   // Finish this :)
-   let cent = ''
-    if(year.toString().slice(-2)==00){
-    cent = year/100   
-    }else {
-        cent = Math.floor(year/100 + 1)
-    }
-    return cent
+  let cent = ''
+  if (year.toString().slice(-2) == 00) {
+    cent = year / 100
+  } else {
+    cent = Math.floor(year / 100 + 1)
+  }
+  return cent
 }
 
 // Invert values
 function invert(array) {
-    for (let i = 0; i < array.length; i++) {
-       array[i] =  -array[i]
-    }
+  for (let i = 0; i < array.length; i++) {
+    array[i] = -array[i]
+  }
   return array
-  
+
 }
 // invert([1,-2,3,-4,5])
 
 
 
 // Basic Mathematical Operations
-function basicOp(operation, value1, value2){
-  switch(operation){
+function basicOp(operation, value1, value2) {
+  switch (operation) {
     case '+':
       return value1 + value2;
       break
-      case '-':
+    case '-':
       return value1 - value2;
       break
-      case '*':
+    case '*':
       return value1 * value2;
       break
     case '/':
@@ -146,16 +131,16 @@ function basicOp(operation, value1, value2){
 // Are You Playing Banjo?
 function areYouPlayingBanjo(name) {
   // Implement me
-  if(name.charAt(0) == 'r' || name.charAt(0) == 'R'){
-    return name + ' plays banjo' ;
-  }else {
+  if (name.charAt(0) == 'r' || name.charAt(0) == 'R') {
+    return name + ' plays banjo';
+  } else {
     return name + ' does not play banjo';
   }
 }
 areYouPlayingBanjo('Ringo')
 
 // Multiply
-function multiply(a, b){
-return  a * b
+function multiply(a, b) {
+  return a * b
 }
-multiply(3,4)
+multiply(3, 4)
