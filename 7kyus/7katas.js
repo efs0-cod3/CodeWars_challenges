@@ -17,7 +17,7 @@ function sumDigits(number) {
     return nArr.reduce((a,b) => a + b) //reduce the 'nArr' to a single value by adding
       }
 
-// solution after discovering Mat.abs()
+// my solution after discovering Mat.abs()
 function sumDigits(number) {
     let nStr = Math.abs(number).toString()
     nArr=[]
