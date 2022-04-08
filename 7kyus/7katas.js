@@ -1,6 +1,31 @@
 /*From Bottom Up*/
 // 7kyus
 
+// Summing a number's digits
+// my solution
+function sumDigits(number) {
+    let nStr = number.toString()
+    let notNArr=[] //here goes the 'minus' sign
+    let nArr=[] // here goes the numbers
+      for(let i=0;i<nStr.length; i++){
+        if(nStr[i] == '-'){
+      notNArr.push(nStr[i]) //if nStr[i] not a number, it will go to 'notNArr'
+        }else{
+        nArr.push(Number(nStr[i])) //if nStr[i] is a number, it will go to 'nArr' to be sum
+        }
+        }
+    return nArr.reduce((a,b) => a + b) //reduce the 'nArr' to a single value by adding
+      }
+
+// solution after discovering Mat.abs()
+function sumDigits(number) {
+    let nStr = Math.abs(number).toString()
+    nArr=[]
+      for(let i=0;i<nStr.length; i++){
+        nArr.push(Number(nStr[i]))
+          }
+    return nArr.reduce((a,b) => a + b)
+      } 
 
 
 // Get the Middle Character 04/04/2022
