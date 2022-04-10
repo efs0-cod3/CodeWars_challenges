@@ -1,31 +1,68 @@
 /*From Bottom Up*/
 // 7kyus
 
-// Summing a number's digits
+//remove the minimum 10/04/2022
+function removeSmallest(numbers) {
+    //   throw "TODO: removeSmallest";
+    let numClone = [...numbers] //create an array spreading the values of numbers array
+      if(numClone == []){ 
+        return numClone // if its empty array return empty array (braquets [])
+      }else if(numClone.length == 1){
+        numClone.pop()// if array length is 1 pop that value and return empty array (braquets [])
+        return numClone
+      }
+       else{
+    //      find the index of the minimun value and remove that and only that value
+    numClone.splice(numClone.indexOf(Math.min(...numClone)),1)
+    return numClone //return the resulting array
+      }
+    }
+
+function removeSmallest(numbers) {
+    //figure out all previous code was doing the same than this!
+    //create an array spreading the values of numbers array
+    let numClone = [...numbers]
+    // find the index of the minimun value and remove that and only that value
+    numClone.splice(numClone.indexOf(Math.min(...numClone)), 1)
+    //return the resulting array
+    return numClone
+}
+
+// the coupon code
+function checkCoupon(insertedcode, validCode, currentDate, expDate){
+  
+    if(insertedcode === validCode &&  Date.parse(currentDate) <= Date.parse(expDate)){
+     // if code inserted is exactly equal valid code and currentdate is less or equal the exp Date return T
+      return true
+    } return false 
+    }
+
+
+// Summing a number's digits 07/04/2022
 // my solution
 function sumDigits(number) {
     let nStr = number.toString()
-    let notNArr=[] //here goes the 'minus' sign
-    let nArr=[] // here goes the numbers
-      for(let i=0;i<nStr.length; i++){
-        if(nStr[i] == '-'){
-      notNArr.push(nStr[i]) //if nStr[i] not a number, it will go to 'notNArr'
-        }else{
-        nArr.push(Number(nStr[i])) //if nStr[i] is a number, it will go to 'nArr' to be sum
+    let notNArr = [] //here goes the 'minus' sign
+    let nArr = [] // here goes the numbers
+    for (let i = 0; i < nStr.length; i++) {
+        if (nStr[i] == '-') {
+            notNArr.push(nStr[i]) //if nStr[i] not a number, it will go to 'notNArr'
+        } else {
+            nArr.push(Number(nStr[i])) //if nStr[i] is a number, it will go to 'nArr' to be sum
         }
-        }
-    return nArr.reduce((a,b) => a + b) //reduce the 'nArr' to a single value by adding
-      }
+    }
+    return nArr.reduce((a, b) => a + b) //reduce the 'nArr' to a single value by adding
+}
 
 // my solution after discovering Mat.abs()
 function sumDigits(number) {
     let nStr = Math.abs(number).toString()
-    nArr=[]
-      for(let i=0;i<nStr.length; i++){
+    nArr = []
+    for (let i = 0; i < nStr.length; i++) {
         nArr.push(Number(nStr[i]))
-          }
-    return nArr.reduce((a,b) => a + b)
-      } 
+    }
+    return nArr.reduce((a, b) => a + b)
+}
 
 
 // Get the Middle Character 04/04/2022
