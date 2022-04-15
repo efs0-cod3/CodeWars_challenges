@@ -1,6 +1,10 @@
 /*From Bottom Up*/
 // 8kyus
 
+// Reversed Strigns 14/04/2022
+function solution(str){
+  return str.split('').reverse().join('')
+  }
 
 // Get the mean of an array 01/04/2022
 function getAverage(marks) {
