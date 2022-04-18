@@ -1,6 +1,29 @@
 /*From Bottom Up*/
 // 7kyus
 
+//complementary DNA 17/04/2022
+function DNAStrand(dna){
+  //your code here
+  let catcher = [] //it will catch all the letters
+ dna.split('').forEach(el=>{ //split dna unto array and iterate each index to check the letter to push the output to catcher
+   switch (el){
+       case 'T': 
+       catcher.push('A')
+       break;
+       case 'A':
+       catcher.push('T')
+       break;
+       case 'C':
+      catcher.push('G')
+       break;
+       case 'G':
+       catcher.push('C')
+       break; 
+   }
+ })
+  return catcher.join('')
+}
+
 //remove the minimum 10/04/2022
 function removeSmallest(numbers) {
     //   throw "TODO: removeSmallest";

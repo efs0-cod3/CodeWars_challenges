@@ -1,6 +1,11 @@
 /*From Bottom Up*/
 // 8kyus
 
+//function 1- hello world
+let greet = () => {
+  return 'hello world!'
+}
+
 // Reversed Strigns 14/04/2022
 function solution(str){
   return str.split('').reverse().join('')
