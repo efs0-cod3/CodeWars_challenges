@@ -1,7 +1,7 @@
 /*From Bottom Up*/
 // 8kyus
 
-//function 1- hello world
+//function 1- hello world 17/04/2022
 let greet = () => {
   return 'hello world!'
 }
@@ -146,10 +146,10 @@ function areYouPlayingBanjo(name) {
     return name + ' does not play banjo';
   }
 }
-areYouPlayingBanjo('Ringo')
+// areYouPlayingBanjo('Ringo')
 
 // Multiply
 function multiply(a, b) {
   return a * b
 }
-multiply(3, 4)
+// multiply(3, 4)
