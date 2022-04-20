@@ -1,15 +1,118 @@
 /*From Bottom Up*/
 // 8kyus
 
+// Sum ARrays 19/04/2022
+// Sum Numbers
+function sum (numbers) {
+  "use strict";
+  return numbers.reduce((a,b) => a+b,0)
+};
+
+// Beginner - Reduce but Grow 19/04/2022
+function grow(x){
+  let result = 1;
+for(let i = 0;i < x.length;i++){
+  result *= x[i]
+}
+  return result
+}
+
+// Sum mixed Array 19/04/2022
+function sumMix(x){
+  return x.reduce((a,b) => a+(+b),0)
+}
+
+// DNA to RNA conversion 19/04/2022
+function DNAtoRNA(dna) {
+  // create a function which returns an RNA sequence from the given DNA sequence
+ let regx = /T/ig
+  return dna.replace(regx,'U')
+}
+
+// Beginner - Lost without a Map 19/04/2022
+function maps(x){
+  return x.map(e => e*2)
+  }
+
+// Remove exclamation marks 19/04/2022
+function removeExclamationMarks(s) {
+  return s.split('!').join('');
+}
+
+// Sum of positive 19/04/2022
+function positiveSum(arr) {
+  return arr == '' ? 0 : arr.filter(num => num > 0).reduce((a,b) => a+b,0) 
+}
+
+// Return negative 19/04/2022
+function makeNegative(num) {
+  // Code?
+  if(num === 0){
+    return 0 
+  }else if (num > 0){
+    return -num
+  }else {
+    return num
+  }
+}
+
+// Count by X 19/04/2022
+function countBy(x, n) {
+  let z = [];
+  for(let i = x; i <= (x*n); i += x){
+    z.push(i)
+  }
+  return z;
+}
+
+//Total amount of points 18/04/2022
+function points(games) {
+  // your code here 
+  let point = 0
+  games.map(el => {
+    if (el[0] > el[2]) {
+      point += 3
+    } else if (el[0] == el[2]) {
+      point += 1
+    }
+  })
+  return point
+}
+
+//Calculate average 18/04/2022
+function find_average(array) {
+  // your code here
+  if (array == '') {
+    return 0
+  } else {
+    return parseFloat(array.reduce((a, b) => a + b, 0) / array.length)
+  }
+}
+
+//Reversed sequence 18/04/2022
+const reverseSeq = n => {
+  let arr = []
+  for (let i = n; i >= 1; i--) {
+    arr.push(i)
+  }
+  return arr;
+};
+
+//Simple multiplication 18/04/2022
+function simpleMultiplication(number) {
+  // your code........
+  return number % 2 ? number * 9 : number * 8
+}
+
 //function 1- hello world 17/04/2022
 let greet = () => {
   return 'hello world!'
 }
 
 // Reversed Strigns 14/04/2022
-function solution(str){
+function solution(str) {
   return str.split('').reverse().join('')
-  }
+}
 
 // Get the mean of an array 01/04/2022
 function getAverage(marks) {

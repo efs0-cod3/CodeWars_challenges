@@ -1,6 +1,34 @@
 /*From Bottom Up*/
 // 7kyus
 
+
+//Friend or Foe? 18/04/2022
+function friend(friends){
+    //your code here
+    return friends.filter(el => el.length == 4)
+  }
+
+//list filtering 18/04/2022
+function filter_list(l) {
+    // Return a new array with the strings filtered out
+     let catcher = []
+    for(let i = 0; i < l.length; i++){
+      if(typeof l[i] === 'number')
+      catcher.push(l[i])
+    }
+    return catcher
+  }
+
+//reverse Words 18/04/2022
+function reverseWords(str) {
+    // Go for it
+   let reversed = ''; //empty str to catch the letters
+   for (var i = str.length - 1; i >= 0; i--) { //reverse loop to iterate from the end
+     reversed += str[i] // set reverse += each letter
+   }
+    return reversed.split(' ').reverse().join(' ') // split reversed into array reverse it and join by words!
+  }
+
 //complementary DNA 17/04/2022
 function DNAStrand(dna){
   //your code here
