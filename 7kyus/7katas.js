@@ -3,71 +3,70 @@
 
 
 //Friend or Foe? 18/04/2022
-function friend(friends){
+function friend(friends) {
     //your code here
     return friends.filter(el => el.length == 4)
-  }
+}
 
 //list filtering 18/04/2022
 function filter_list(l) {
     // Return a new array with the strings filtered out
-     let catcher = []
-    for(let i = 0; i < l.length; i++){
-      if(typeof l[i] === 'number')
-      catcher.push(l[i])
+    let catcher = []
+    for (let i = 0; i < l.length; i++) {
+        if (typeof l[i] === 'number')
+            catcher.push(l[i])
     }
     return catcher
-  }
+}
 
 //reverse Words 18/04/2022
 function reverseWords(str) {
     // Go for it
-   let reversed = ''; //empty str to catch the letters
-   for (var i = str.length - 1; i >= 0; i--) { //reverse loop to iterate from the end
-     reversed += str[i] // set reverse += each letter
-   }
+    let reversed = ''; //empty str to catch the letters
+    for (var i = str.length - 1; i >= 0; i--) { //reverse loop to iterate from the end
+        reversed += str[i] // set reverse += each letter
+    }
     return reversed.split(' ').reverse().join(' ') // split reversed into array reverse it and join by words!
-  }
+}
 
 //complementary DNA 17/04/2022
-function DNAStrand(dna){
-  //your code here
-  let catcher = [] //it will catch all the letters
- dna.split('').forEach(el=>{ //split dna unto array and iterate each index to check the letter to push the output to catcher
-   switch (el){
-       case 'T': 
-       catcher.push('A')
-       break;
-       case 'A':
-       catcher.push('T')
-       break;
-       case 'C':
-      catcher.push('G')
-       break;
-       case 'G':
-       catcher.push('C')
-       break; 
-   }
- })
-  return catcher.join('')
+function DNAStrand(dna) {
+    //your code here
+    let catcher = [] //it will catch all the letters
+    dna.split('').forEach(el => { //split dna unto array and iterate each index to check the letter to push the output to catcher
+        switch (el) {
+            case 'T':
+                catcher.push('A')
+                break;
+            case 'A':
+                catcher.push('T')
+                break;
+            case 'C':
+                catcher.push('G')
+                break;
+            case 'G':
+                catcher.push('C')
+                break;
+        }
+    })
+    return catcher.join('')
 }
 
 //remove the minimum 10/04/2022
 function removeSmallest(numbers) {
     //   throw "TODO: removeSmallest";
     let numClone = [...numbers] //create an array spreading the values of numbers array
-      if(numClone == []){ 
+    if (numClone == []) {
         return numClone // if its empty array return empty array (braquets [])
-      }else if(numClone.length == 1){
-        numClone.pop()// if array length is 1 pop that value and return empty array (braquets [])
+    } else if (numClone.length == 1) {
+        numClone.pop() // if array length is 1 pop that value and return empty array (braquets [])
         return numClone
-      }
-       else{
-    //      find the index of the minimun value and remove that and only that value
-    numClone.splice(numClone.indexOf(Math.min(...numClone)),1)
-    return numClone //return the resulting array
-      }
+    } else {
+        //      find the index of the minimun value and remove that and only that value
+        numClone.splice(numClone.indexOf(Math.min(...numClone)), 1)
+        return numClone //return the resulting array
     }
+}
 
 function removeSmallest(numbers) {
     //figure out all previous code was doing the same than this!
@@ -80,13 +79,14 @@ function removeSmallest(numbers) {
 }
 
 // the coupon code
-function checkCoupon(insertedcode, validCode, currentDate, expDate){
-  
-    if(insertedcode === validCode &&  Date.parse(currentDate) <= Date.parse(expDate)){
-     // if code inserted is exactly equal valid code and currentdate is less or equal the exp Date return T
-      return true
-    } return false 
+function checkCoupon(insertedcode, validCode, currentDate, expDate) {
+
+    if (insertedcode === validCode && Date.parse(currentDate) <= Date.parse(expDate)) {
+        // if code inserted is exactly equal valid code and currentdate is less or equal the exp Date return T
+        return true
     }
+    return false
+}
 
 
 // Summing a number's digits 07/04/2022

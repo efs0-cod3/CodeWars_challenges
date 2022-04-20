@@ -120,8 +120,8 @@ function getAverage(marks) {
   let newArr = marks.reduce((a, b) => a + b)
 
   return Math.floor(newArr / marks.length)
-
 }
+
 // added 3/30/2022
 // Is he gonna survive? 
 function hero(bullets, dragons) {
@@ -159,7 +159,6 @@ function smash(words) {
 };
 
 // Keep Hydrated!
-
 function litres(time) {
   return Math.floor(time * 0.5);
 }
@@ -187,6 +186,7 @@ function opposite(number) {
   //your code here
   return number = Number(`${-number}`)
 }
+
 // Opposite number 2
 function opposite(number) {
   //your code here
@@ -216,11 +216,8 @@ function invert(array) {
     array[i] = -array[i]
   }
   return array
-
 }
 // invert([1,-2,3,-4,5])
-
-
 
 // Basic Mathematical Operations
 function basicOp(operation, value1, value2) {
@@ -249,10 +246,9 @@ function areYouPlayingBanjo(name) {
     return name + ' does not play banjo';
   }
 }
-// areYouPlayingBanjo('Ringo')
+
 
 // Multiply
 function multiply(a, b) {
   return a * b
 }
-// multiply(3, 4)
