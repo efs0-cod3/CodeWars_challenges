@@ -19,4 +19,4 @@ Thank you for stoping by, and if you want to practice with me, or a challenge ju
 
 ## Current Codewars Stats
 
-Ranked: 7kyu
+https://www.codewars.com/users/efs0-cod3/badges/large
