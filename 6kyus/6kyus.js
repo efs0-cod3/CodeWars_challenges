@@ -1,5 +1,17 @@
 //  6kyus katas
 
+// are they the same?
+function comp(array1, array2){
+    //your code here
+    if(array1 == null|| array2 == null) return false  // if either arr null return false
+    
+    let sArr1 = array1.sort((a,b) => a - b);
+    let sArr2 = array2.sort((a,b) => a - b);
+    
+    return sArr1.every((i,index)=> i * i == sArr2[index]) //check if every item of arr1 is equal arr2!
+   }
+
+
 // Unique In Order 19/04/2022
 var uniqueInOrder = function (iterable) {
     //your code here - remember iterable can be a string or an array
