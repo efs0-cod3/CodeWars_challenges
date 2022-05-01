@@ -1,7 +1,6 @@
 /*From Bottom Up*/
 // 8kyus
 
-
 // Sum without highest and lowest number
 function sumArray(array) {
   if (array == null || array.length == 1 || array.length == 2) {
