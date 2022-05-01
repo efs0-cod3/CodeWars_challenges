@@ -1,38 +1,84 @@
 /*From Bottom Up*/
 // 8kyus
 
+
+// Sum without highest and lowest number
+function sumArray(array) {
+  if (array == null || array.length == 1 || array.length == 2) {
+    return 0
+  } else {
+    array.sort((a, b) => a - b)
+    array.shift()
+    array.pop()
+    let result = array.reduce((a, b) => a + b, 0)
+    return result
+  }
+}
+
+function sumArray(array) {
+  if (array == null || array.length <= 2) {
+    return 0
+  } else {
+    return array.sort((a, b) => a - b).slice(1, -1).reduce((a, b) => a + b, 0)
+  }
+}
+
+// you cant code under presure 27/4/2022
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it. 
+  return i * 2;
+}
+
+// Will you make it to the gas station 
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+  let milesLeft = mpg * fuelLeft
+  return milesLeft >= distanceToPump ? true : false
+};
+
+// remove first and last char
+
+function removeChar(str){
+  //You got this!
+ let sArr = str.split('')
+   sArr.pop()
+   sArr.shift()
+   return sArr.join('')
+ };
+
+
 // Sum ARrays 19/04/2022
 // Sum Numbers
-function sum (numbers) {
+function sum(numbers) {
   "use strict";
-  return numbers.reduce((a,b) => a+b,0)
+  return numbers.reduce((a, b) => a + b, 0)
 };
 
 // Beginner - Reduce but Grow 19/04/2022
-function grow(x){
+function grow(x) {
   let result = 1;
-for(let i = 0;i < x.length;i++){
-  result *= x[i]
-}
+  for (let i = 0; i < x.length; i++) {
+    result *= x[i]
+  }
   return result
 }
 
 // Sum mixed Array 19/04/2022
-function sumMix(x){
-  return x.reduce((a,b) => a+(+b),0)
+function sumMix(x) {
+  return x.reduce((a, b) => a + (+b), 0)
 }
 
 // DNA to RNA conversion 19/04/2022
 function DNAtoRNA(dna) {
   // create a function which returns an RNA sequence from the given DNA sequence
- let regx = /T/ig
-  return dna.replace(regx,'U')
+  let regx = /T/ig
+  return dna.replace(regx, 'U')
 }
 
 // Beginner - Lost without a Map 19/04/2022
-function maps(x){
-  return x.map(e => e*2)
-  }
+function maps(x) {
+  return x.map(e => e * 2)
+}
 
 // Remove exclamation marks 19/04/2022
 function removeExclamationMarks(s) {
@@ -41,17 +87,17 @@ function removeExclamationMarks(s) {
 
 // Sum of positive 19/04/2022
 function positiveSum(arr) {
-  return arr == '' ? 0 : arr.filter(num => num > 0).reduce((a,b) => a+b,0) 
+  return arr == '' ? 0 : arr.filter(num => num > 0).reduce((a, b) => a + b, 0)
 }
 
 // Return negative 19/04/2022
 function makeNegative(num) {
   // Code?
-  if(num === 0){
-    return 0 
-  }else if (num > 0){
+  if (num === 0) {
+    return 0
+  } else if (num > 0) {
     return -num
-  }else {
+  } else {
     return num
   }
 }
@@ -59,7 +105,7 @@ function makeNegative(num) {
 // Count by X 19/04/2022
 function countBy(x, n) {
   let z = [];
-  for(let i = x; i <= (x*n); i += x){
+  for (let i = x; i <= (x * n); i += x) {
     z.push(i)
   }
   return z;

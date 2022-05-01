@@ -1,5 +1,25 @@
 //  6kyus katas
 
+// tribonnaci sequence  28/4/222
+function tribonacci(signature,n){
+    //your code here
+    let tribo = signature
+    if(n==0){
+     return tribo = [] 
+    } else if(n == 1){
+      return tribo = [signature[0]] 
+    }else if(n == 2){
+     return tribo = signature.slice(0,2) //return the first 2 elements og arr
+    }else if(n == 3){
+      return signature //return the exact array
+    }else {
+      for(let i = 3; tribo.length < n; i++){ //start from tru
+        tribo.push(tribo[tribo.length - 3] + tribo[tribo.length - 2] + tribo[tribo.length - 1]) //get the three last elements of signature sum it and push it to tribo
+      }
+    }
+      return tribo // return the result!
+  }
+
 // are they the same?
 function comp(array1, array2){
     //your code here

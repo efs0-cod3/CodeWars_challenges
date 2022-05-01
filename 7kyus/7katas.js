@@ -1,6 +1,12 @@
 /*From Bottom Up*/
 // 7kyus
 
+// sum two lowest positive integers 27/04/2022
+function sumTwoSmallestNumbers(numbers) {
+    //Code here
+    numbers.sort((a, b) => a - b)
+    return numbers[0] + numbers[1]
+}
 
 //Friend or Foe? 18/04/2022
 function friend(friends) {
