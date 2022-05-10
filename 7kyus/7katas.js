@@ -1,6 +1,13 @@
 /*From Bottom Up*/
 // 7kyus
 
+//You're a square! 9/5/2022
+var isSquare = function(n){
+    return n === (Math.round(Math.sqrt(n))**2) ? true : false; // fix me
+  }
+
+
+
 // sum two lowest positive integers 27/04/2022
 function sumTwoSmallestNumbers(numbers) {
     //Code here
