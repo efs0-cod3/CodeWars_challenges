@@ -1,7 +1,104 @@
 /*From Bottom Up*/
 // 8kyus
 
-// Sum without highest and lowest number
+// Remove spaces of str 6/05/2022
+function noSpace(x){
+  x = x.split(' ')
+    let catcher = []
+    x.forEach(el => {
+      if(el !== ''){
+        catcher.push(el)
+      }
+    })
+    return catcher.join('')
+  }
+  
+  //Simpler
+  // x = x.split(' ').join('')
+
+
+//  count positive and sum negatives 5/05/2022
+  function countPositivesSumNegatives(input) {
+    let countOfPos = 0;
+     let negNums = [];
+     if(input == null || input.length == 0){
+       return []
+     }else{
+       for(let i = 0; i < input.length; i++){
+         input[i] > 0 ? countOfPos++ : negNums.push(input[i])
+       }
+       const sumOfNegs = negNums.reduce((a,b) => a + b,0)
+       return [countOfPos, sumOfNegs]
+     }
+   }
+
+  // Grass hopper 1/05/2022
+   function getGrade (s1, s2, s3) {
+    // Code here
+   let avg = (s1+s2+s3)/3
+  let grade;
+    if(avg >= 90){
+      grade = 'A'
+    }else if(avg >= 80 && avg < 90){
+      grade = 'B'
+    }else if(avg >= 70 && avg < 80){
+      grade = 'C'
+    }else if(avg >= 60 && avg < 70){
+      grade = 'D'
+    }else if(avg < 60){
+      grade = 'F'
+    }
+    return grade
+  }
+
+  // Beginner series #2 Clock 
+  function past(h, m, s){
+    //#Happy Coding! ^_^
+  return (
+    h*3600000 // 1 hour = 3,600,000 ms
+      +
+      m*60000 // 1 min = 60,000 ms
+      +
+      s*1000 // 1 sec = 1,000 ms
+    )
+  }
+
+  // Convert number to reversed array of digits 1/05/2022
+  function digitize(n) {
+    //code here
+   let nArr = [] //number catcehr
+    let nS = n.toString() // convert number to string
+  for(let i= 0;i < nS.length; i++){
+    nArr.push(+nS[i]) //push each str truned into number to nArr
+  }
+  return nArr.reverse() //reverse order in array
+  }
+
+  // find min and max 1/05/2022
+  var min = function(list){
+    list.sort((a,b) => a - b);
+      
+      return list[0];
+  }
+  
+  var max = function(list){
+    list.sort((a,b) => b - a);
+      
+      return list[0];
+  }
+
+  // even or odd 1/05/2022
+  function even_or_odd(number) {
+    return number % 2 == 0 ? 'Even' : 'Odd'
+  }
+
+  // can we divide it? 1/05/2022
+  function isDivideBy(number, a, b) {
+    // good luck
+  return number%a == 0 && number % b == 0 ? true : false
+  }
+
+// Sum without highest and lowest number 30/04/2022
 function sumArray(array) {
   if (array == null || array.length == 1 || array.length == 2) {
     return 0

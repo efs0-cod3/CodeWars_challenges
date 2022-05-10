@@ -1,5 +1,17 @@
 /*From Bottom Up*/
 // 7kyus
+// Sum of the first nth term of Series 10/05/2022
+function SeriesSum(n)
+{
+  let series = 0
+  for(let i=0;i < n; i++){
+   series += 1 / ((3 * i) + 1) //each divider will be accending fraction by 3... 1/4,1/7... 
+  }
+//   console.log(series.toFixed(2))
+  return series.toFixed(2)
+  
+  // Happy Coding ^_^
+}
 
 //You're a square! 9/5/2022
 var isSquare = function(n){
@@ -7,6 +19,45 @@ var isSquare = function(n){
   }
 
 
+//   Drop caps 6/05/2022
+  function dropCap(n) {
+    let nArr = n.split(' ')
+      for(let i = 0; i < nArr.length; i++){ //loop the array
+        if(nArr[i].length > 2){ //self exp
+          nArr[i] = nArr[i].slice(0,1).toUpperCase() + nArr[i].slice(1).toLowerCase()//modify nArr[i]
+        }
+      }
+        return nArr.join(' ')
+    }
+    
+    //solution with map
+    //n = n.split(' ').map((x) => x.length > 2 ? x[0].toUpperCase() + x.slice(1).toLowerCase() : x);
+    // return n.join(' ');
+
+    // Bingo 5/05/2022
+    function bingo(a) {
+        // your winning code here
+      //   let goal = [2,9,14,7,15]
+      //   for(let i = 0; i < goal.length; i++){
+      //    if(!a.includes(goal[i])){
+      // return 'LOSE'
+      //   }
+      //   }return "WIN"
+      //   }
+      
+        let goal = [2,9,14,7,15]
+      const win = goal.every(bngo => a.includes(bngo))
+      if(win){
+        return 'WIN'
+      } return "LOSE"
+      }
+
+    //   The highest profit wins! 1/05/2022
+function minMax(arr){
+  let min = Math.min(...arr) //get min digit in arr
+  let max = Math.max(...arr) // get max dugit in arr
+  return [min,max]; // return arr with min and max
+}
 
 // sum two lowest positive integers 27/04/2022
 function sumTwoSmallestNumbers(numbers) {

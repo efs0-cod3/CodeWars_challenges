@@ -1,5 +1,47 @@
 //  6kyus katas
 
+// Detect Pangram (if the str has every letter of the abc)
+function isPangram(string){
+    //...
+  let abc = 'abcdefghijklmnopqrstuvwxyz'.split('')
+  return abc.every(l => string.toLowerCase().includes(l))
+    // looks if string has every letter of abc var!
+  }
+
+// duplace encoder 5/05/2022
+  function duplicateEncode(word){
+    // ...
+  let catcher = '';
+  let lWord = word.toLowerCase();
+  
+for(let i= 0; i < lWord.length;i++){
+  let count = 0;
+  for(let j = 0; j < lWord.length; j++){
+    if(lWord[i] == lWord[j]){
+    count++
+    }
+  }
+    count > 1 ? catcher += ')' : catcher += '('
+}
+  return catcher
+}
+
+// find uniq number 1/05/2022
+function findUniq(arr) {
+    // do magic
+    arr.sort((a,b) => a-b)
+  if(arr[0]==arr[1]){
+    return arr.pop()
+    }else{
+      return arr[0]
+    }
+  }
+
+//   Array.diff 1/05/2022
+  function arrayDiff(a, b) {
+    return a.filter(el => !b.includes(el))
+    }
+
 // tribonnaci sequence  28/4/222
 function tribonacci(signature,n){
     //your code here
