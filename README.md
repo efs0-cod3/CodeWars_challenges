@@ -1,6 +1,9 @@
 # Coding Challenges
 
-This repo is to push my Code Wars solutions
+<img alt='codewars-profile' src='https://github.com/efs0-cod3/efs0-CodeWars/blob/main/codewars.png'>
+
+This repo is to push my Code Wars solutions.
+
 
 ## Why?
 
