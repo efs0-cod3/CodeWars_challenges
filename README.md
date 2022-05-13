@@ -22,4 +22,4 @@ Thank you for stoping by, and if you want to practice with me, or a challenge ju
 
 ## Current Codewars Stats
 
-### 6kyu [Badge](https://www.codewars.com/users/efs0-cod3/badges/large)
+<img src='https://www.codewars.com/users/efs0-cod3/badges/large'>
