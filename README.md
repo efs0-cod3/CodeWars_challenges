@@ -2,12 +2,12 @@
 
 <img alt='codewars-profile' src='https://github.com/efs0-cod3/efs0-CodeWars/blob/main/codewars.png'>
 
-This repo is to push my Code Wars solutions.
-
+Here you'll find my solutions for codeWars problems
 
 ## Why?
 
 * To train the mind and cement knowledge
+* Sharpen problem solvin skills
 * Daily practice = Repetition of core concepts
 * Maintain my tought process ready 
 * Competition
