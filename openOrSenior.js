@@ -1,3 +1,5 @@
+// name Categorize New Member
+
 function openOrSenior(data){
     // ...
     let output = [];
