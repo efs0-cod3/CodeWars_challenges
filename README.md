@@ -1,10 +1,13 @@
 # Coding Challenges
 
-This repo is to push my Code Wars solutions
+<img alt='codewars-profile' src='https://github.com/efs0-cod3/efs0-CodeWars/blob/main/codewars.png'>
+
+Here you'll find my solutions for codeWars problems
 
 ## Why?
 
 * To train the mind and cement knowledge
+* Sharpen problem solvin skills
 * Daily practice = Repetition of core concepts
 * Maintain my tought process ready 
 * Competition
@@ -19,4 +22,4 @@ Thank you for stoping by, and if you want to practice with me, or a challenge ju
 
 ## Current Codewars Stats
 
-### 6kyu [Badge](https://www.codewars.com/users/efs0-cod3/badges/large)
+<img src='https://www.codewars.com/users/efs0-cod3/badges/large'>
