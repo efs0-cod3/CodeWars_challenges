@@ -20,3 +20,7 @@ function gooseFilter(birds) {
     return newArr
 };
 console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]))
+
+
+// Method filter
+// birds.filter(bird => !geese.includes(bird)
