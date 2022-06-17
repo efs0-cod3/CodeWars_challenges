@@ -11,3 +11,6 @@ function findShort(s){
     s.map(el => catcher.push(el.length))
     return Math.min(...catcher)
    }
+   console.log(findShort("hola como estas el dia de hoy"));
+
+   
