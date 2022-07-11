@@ -13,5 +13,4 @@ for(let i =0; i < array1.length;i++){
 
 if (result < 0)result = 0
 return result
-
 }
