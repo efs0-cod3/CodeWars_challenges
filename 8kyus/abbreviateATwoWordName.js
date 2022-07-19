@@ -9,5 +9,5 @@ function abbrevName(name) {
     }
   }
   return (firstInitial + secondInitial).toUpperCase()
-  
+1  
 }
