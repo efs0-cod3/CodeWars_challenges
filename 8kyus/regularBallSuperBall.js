@@ -1,4 +1,6 @@
-var Ball = function(ballType = 'regular') {
+class Ball {
+  constructor(ballType = 'regular') {
     // your code goes here
-    this.ballType = ballType
-  };
+    this.ballType = ballType;
+  }
+}
