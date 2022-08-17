@@ -1,4 +1,4 @@
 function nameShuffler(str){
     //Shuffle It
-    return str = str.split(' ').reverse().join(' ')
+    return str.split(' ').reverse().join(' ')
   }
