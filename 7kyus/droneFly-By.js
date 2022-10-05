@@ -1,7 +1,6 @@
 function flyBy(lamps, drone) {
   drone = drone.split("");
   lamps = lamps.split("");
-  let result = [];
   for (let i = 0; i < drone.length; i++) {
     lamps.splice(i, 0, "o");
     lamps.pop();
