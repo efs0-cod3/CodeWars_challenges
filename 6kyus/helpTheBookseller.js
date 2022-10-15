@@ -1,5 +1,5 @@
 
-not finished
+// not finished
 
 
 function stockList(listOfArt, listOfCat){
