@@ -26,7 +26,7 @@ export enum Color {
   Blue = 4,
 }
 export const var10Enum: Color = Color.Blue;
-export const var11ArrayOfAny: any[] = [1, "test", { a: 3 }, 4, 5];
+export const var11ArrayOfAny: any[] = [1, "test", { a: 3 }, 4, 5];        
 export const var12VoidFunction: () => void = () => {};
 export const var13Null: null = null;
 export const var14Undefined: undefined = undefined;
