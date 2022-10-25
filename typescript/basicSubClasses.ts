@@ -11,4 +11,3 @@ export class God{
    return [new Man,new Woman]
   }
 }
-// code
