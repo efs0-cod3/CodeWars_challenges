@@ -5,6 +5,7 @@ export function apple(x: number | string): string {
 //   second solution 
   export function apple2(x: number | string): string {
     let val: number;
+    // making an x type checking!
     if(typeof x === 'string'){
         val = parseInt(x)
     } else {
