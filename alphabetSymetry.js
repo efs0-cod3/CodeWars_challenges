@@ -44,4 +44,4 @@ function solve(arr) {
   }
   return result;
 }
-solve(["abode", "ABc", "xyzD"]);
+console.log(solve(["abode", "ABc", "xyzD"]));
