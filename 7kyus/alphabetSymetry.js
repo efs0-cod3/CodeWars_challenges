@@ -34,7 +34,6 @@ function solve(arr) {
   for (let word of arr) {
     word = word.toLowerCase();
     for (let i = 0; i < word.length; i++) {
-      console.log(word[i], abc[i]);
       if (word[i] === abc[i]) {
         count++;
       }
