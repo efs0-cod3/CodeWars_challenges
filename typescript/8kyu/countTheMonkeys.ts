@@ -6,3 +6,4 @@ export function monkeyCount(n: number): number[] {
   }
   return result;
 }
+
