@@ -6,4 +6,3 @@ function remove(s, n) {
   return s;
 }
 console.log(remove("!Hi", 1));
-
