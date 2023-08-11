@@ -38,3 +38,25 @@ function decipherThis(str) {
 console.log(
   decipherThis("72eva 97 103o 97t 116sih 97dn 115ee 104wo 121uo 100o")
 );
+
+// with map and rgx
+/**
+ * The `decipherThisMap` function takes a string as input, splits it into words, replaces the first
+ * character of each word with its corresponding ASCII character, and swaps the second and last
+ * characters of each word, then returns the modified string.
+ * @param str - The `str` parameter is a string that represents a map. Each word in the map is encoded
+ * using a specific pattern. The function `decipherThisMap` aims to decode the map and return the
+ * decoded version.
+ * @returns The function `decipherThisMap` returns a modified version of the input string `str`.
+ */
+function decipherThisMap(str) {
+  return str.split(" ")
+    .map(w =>
+      w.replace(/^\d+/, c => String.fromCharCode(c))
+       .replace(/^(.)(.)(.*)(.)$/, "$1$4$3$2")
+    )
+    .join(" ")
+}
+console.log(
+  decipherThisMap("72eva 97 103o 97t 116sih 97dn 115ee 104wo 121uo 100o")
+);
