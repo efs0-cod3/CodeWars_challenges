@@ -20,6 +20,8 @@ function nbMonths(
     leftOver,
     result = [],
     totalSavings = 0;
+  /* The `while` loop is used to calculate the number of months it takes to save enough money to afford
+  the new price of the item. */
   while (startPriceNew > startPriceOld + totalSavings) {
     if (month % 2) {
       percentLossByMonth += 0.5;
