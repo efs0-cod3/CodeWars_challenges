@@ -1,4 +1,4 @@
 var a = "dev"
-var b = "Lab"
+var e = "Lab"
 
-var name = a + b
+var name = a + e
