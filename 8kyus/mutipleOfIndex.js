@@ -6,6 +6,5 @@ function multipleOfIndex(array) {
         output.push(e)
       }
     })
-    console.log(output)
     return output
   }
