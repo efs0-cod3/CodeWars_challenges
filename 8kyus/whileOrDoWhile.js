@@ -14,3 +14,19 @@ function padIt(str, n) {
 }
 
 console.log(padIt("a", 5));
+
+
+
+function padItDoWhile(str, n) {
+    //coding here
+    let i = 1
+
+    do {
+        str = i % 2 ? "*" + str : str + "*"
+        i++ 
+    } while (i <= n);
+
+    return str
+  
+  }
+  console.log(padItDoWhile("a", 5));
