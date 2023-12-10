@@ -27,3 +27,7 @@ function minSum2(arr) {
 }
 console.log(minSum2([5, 4, 2, 3]));
 console.log(minSum2([12, 6, 10, 26, 3, 24]));
+
+
+const minSumWithReduce = arr =>
+  arr.sort((a,b) => a - b).reduce((prev,curr) => prev + curr * arr.pop(),0)
