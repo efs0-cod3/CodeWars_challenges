@@ -22,4 +22,12 @@ function twoHighest(arr) {
   console.log(twoHighest([15, 20, 20, 17]));
   console.log(twoHighest([15]));
   console.log(twoHighest([]));
+
+
+    //   ANOTHER EXAMPLE more efficient
   
+    function twoHighestT(arr) {
+      
+        return [...new Set(arr)].sort((a, b) => b - a).slice(0, 2)
+      }
+      console.log(twoHighestT([15, 20, 20, 17]));
