@@ -14,4 +14,17 @@ function sumOfN(n) {
   return catcher;
 }
 
-console.log(sumOfN(3));
+function sumOfNT(n) {
+  let catcher = [0];
+  for (let i = 0; i <= Math.abs(n); i++) {
+    n > 0
+      ? catcher.push(catcher[catcher.length - 1] + i)
+      : catcher.push(catcher[catcher.length - 1] - i);
+  }
+  catcher.shift();
+
+  return catcher;
+}
+
+console.log(sumOfNT(3));
+console.log(sumOfNT(-3));
