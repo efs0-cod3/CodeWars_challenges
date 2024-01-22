@@ -1,6 +1,7 @@
 function balancedNum(number) {
   "Do your magic!";
-  let fHalf = [],  sHalf = [];
+  let fHalf = [],
+    sHalf = [];
   let numArr = String(number).split("").map(Number);
   if (numArr.length <= 2) return "Balanced";
 
