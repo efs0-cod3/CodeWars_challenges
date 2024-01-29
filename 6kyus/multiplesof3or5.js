@@ -9,8 +9,23 @@ function solution(number){
         nums.push(i)
       }
     }
-    
   //   sums all the acurrances in the arr
     return nums.reduce((acc,cur) => acc + cur, 0)
-  
+
   }
+  
+  function otherSolution(number){
+
+  //   sums all the acurrances in the arr
+    return [...Array(number).keys()].filter(i => i % 3 ==0 || i % 5 ==0).reduce((a,c) => a+c,0);
+
+
+  }
+
+  console.log(solution(10))
+  console.log(otherSolution(10))
+//   console.log(solution(50))
+  console.log(solution(9))
+  console.log(otherSolution(9))
+//   console.log(solution(200))
+
